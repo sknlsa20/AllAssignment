@@ -1,0 +1,273 @@
+Day - 6:
+
+	application :
+
+		-> set of programs which is build to acheive certain task.
+
+
+		webex -> connected and continue class, meeting, ......
+
+
+		Standalone application :
+
+			application which executes in your present system.
+
+			mspaint-> OS -> 
+			ex: -> notepad, notepad++, eclipse, jvm, a+b -> 
+
+
+
+		Web application :
+
+			application which executes in a server where accepts request , sends a response depending on request. it is intercommunication betweeen sever and client.
+			HTTP -> hyper text transfer protocol
+
+			
+
+		
+
+		Server:
+		-> it is a system or software which host and create environment for other applications.
+
+		Database Server: 
+				Server which hosts data structure defined by a application to store data
+				ex: sql server, mysql server, mongodbserver, Bigdata
+
+		Web Server:
+
+			server which hosts web site developed in HTML, CSS, JS, Servlet, JSP....these have environment for web applications.
+
+				ex: Apache tomcat
+
+		Application Server:
+			server which hosts web site developed in HTML,CSS, JS, JSP, Servlet, EJB, J2EE..
+they have environment for enterprise applications.
+
+				ex: Weblogic, websphere, jboss......
+
+
+		web site:
+		-> collection of related web pages that contain text, images, audio......
+		-> they get executed or run only in browsers (chrome, mozilla......)
+		-> type of web sites:
+			-> Static web site(static web application)
+				-> content is same for all users.
+
+					ex: wikipidea
+
+			-> Dynamic web site(dynamic web applications)
+
+				-> content changes depending on user.
+
+					ex: gmail, facebook......
+
+
+		-> create static web application -> HTML, CSS
+		-> create dynamic web application -> HTML, CSS, JS, Servlets, JSP,......
+
+
+		static web application:
+		-> HTML: it gives structure to our web pages
+		-> CSS : it gives styling to our web pages
+		-> JS : it gives dynamicallity to our web pages like on click response, interacttion,...
+
+
+		HTML : 
+			-> Hyper text markup language
+
+				markup -> tag -> <> -> <shiva>
+				
+				-> paired tag -> start and end -> <shiva> </shiva>
+				-> unpaired tag -> one tag -> <br/>
+
+
+		Basic structure of HTML page:
+
+		head -> meta information about html page, script files, styling files......
+
+			<meta author="shiva"></meta>
+			<title>first web site</title>
+			<script >....</script>
+			<style>.....</style>
+
+		body -> it contains content to displayed into the browser.
+
+
+		extension should be either HTML or htm
+
+		predefined HTML tags:
+		1. Formatting tags(paired tags)
+
+			underline -<u></u>
+			bold - <b></b>
+			Strong - <big></big>
+			italic - <i></i>
+			small - <small></small>
+			emphasis - <em></em>
+			strike - <strike></strike>
+			delete - <del></del>
+			insert - <ins></ins>
+			super - <sup></sup>
+			sub- <sub></sub>
+			type writing tag -><tt></tt>
+
+			
+		2. unformatted tags
+
+			break  -> <br/> -> unpaired tag
+			para  -> <p></p>
+			preformatting tag<pre></pre>
+
+		3. font tags
+			-> face -> verdana, times new roman
+			-> color -> color
+			-> size -> font size
+
+				
+		4. list tags
+
+			i. order list -> 1, i, I, a, 
+			ii. unorder list -> circle, square,....
+			iii. definition list -> definition
+
+		5. image tag(unpaired tag)
+			<img alt="" src="" height="" width="" border=""/>
+
+		6. hyper link tags
+
+				traversing one from page to another pages
+			types of hyperlinks:
+			1. internal hyper link
+			2. external hyper link
+
+			<a href=""> link </a>
+		7. table tags
+
+			<table>
+			<th>
+			<tr>
+			<td>
+		8. form tags.
+
+			to accept data from user.
+
+			input
+
+				type = -> text, password, button, radio, checkbox, date, time, color, ...........
+			select
+			text area
+
+
+
+	
+
+	Attribute:
+		-> extra information about a tag is called attribute.
+
+		<body text="" bgcolor="" height="" width="">	
+
+
+
+
+
+
+	
+
+CSS -> cascading style sheets.
+
+	-> html files can be added with css content to make web pages more attractive.
+
+	ways to apply css on HTML pages:
+	1. Inline
+	2. Internal
+	3. External
+
+
+	syntax of css:
+
+
+	selector{
+		properties : values;
+		}
+
+
+
+	selector:
+		-> to which element and which way style has to be applied.
+	property:
+		-> which stle has to change, background, border.....
+	value:
+		-> constant information declared for each property.
+
+		background-color:  red, blue, black,.............
+
+	Box-model:
+		margin, padding, border, content
+
+
+	properties:
+	1. Background properties.
+	2. margin properties
+	3. border properties
+	4. padding properties
+	............
+	
+	Javascript : 
+		-> it gives behavior of web pages.
+		-> moch -> live script -> java script
+
+	ways of applying javascript on HTML pages:
+
+	1. Inline
+	2. Internal
+	3. External
+
+	var -> typeless
+
+	DOM -> document object model
+
+
+		document.getElementById("").innerHTML="";
+		document.write("");
+
+	predefined objects:
+
+	- window
+	- document
+	- history
+	- form
+	- Array
+	- Date
+	- elements[]
+	- options
+	- math
+	- String
+	- Global
+
+
+	Event :
+
+	-> change or state of modification done to webpage is called even
+	Type of events:
+
+	-> window
+	-> mouse 
+	-> form
+	-> keyboard 
+	-> clip board
+	-> media
+	-> misc events
+
+
+Task:
+
+Loginpage.html -> home.html-> aboutus, contactus,... -> logout -> loginpage.html
+
+register.html -> home.html
+
+
+registration page should be validated using javascipt
+
+
+
+

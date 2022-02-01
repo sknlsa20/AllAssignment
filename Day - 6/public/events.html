@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+p{
+
+width:"400";
+height:"200";
+}
+</style>
+<script>
+function col()
+{
+	
+	document.bgColor="blue";
+}
+
+
+function col1()
+{
+	document.bgColor="lime";
+	}
+	
+	
+	function ock()
+	{
+		
+		document.getElementById("div").innerHTML="<img ondblclick='ock1()' src='baby.jfif'>";
+	}
+	
+	function ock1()
+	{
+		document.getElementById("div").innerHTML="<img src='baby.jfif' width='600' height='400'>";
+	}
+	
+
+</script>
+</head>
+<body>
+<p id="para" onmouseover="col()" onmouseout="col1()">this is a para</p>
+
+<div id="div" onclick="ock()">this is a div</div>
+
+</body>
+</html>

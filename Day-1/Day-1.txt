@@ -1,0 +1,302 @@
+DAY - 1:
+	
+	-> What is java?
+	-> History of java
+	-> installation process of java
+	-> inside java -> jre,jdk,jvm
+	-> first example -> using our notepad and command
+	-> features of java
+	-> tokens of java
+	-> variables
+	-> methods & arrays
+	-> OOPs 
+
+
+Compiler 
+	- > source code into byte code(10101010101011111) 
+
+Executor 
+	-> byte code gets line by line reading or memory allocation.
+
+	java -> install -> JVM -> java virtual machine.
+	Abstract software -> cannot be modified or can be changed.
+
+
+Installation process:
+
+	1. download java & installing :
+
+			- oracle web site and downloaded jdk
+
+			- jdk - java development kit
+				-> folder structure which contain JVM 
+				-> jvm can compile and execute 
+			- jre - java runtime environment
+				-> folder structure which contain JVM 
+				-> jvm can only execute
+
+
+	difference between JDK, JRE and JVM 
+
+	- jdk - java development kit
+				-> folder structure which contain JVM 
+				-> jvm can compile and execute 
+			- jre - java runtime environment
+				-> folder structure which contain JVM 
+				-> jvm can only execute
+
+	c: program files -> change
+	
+
+	
+	2. Setting path & class path: 
+
+		path:
+			-> OS -> jvm 
+			-> need to show path to binary files
+
+
+	
+			right click on "this pc"
+
+			-> click on "properties"
+			-> "Advanced properties"
+			-> "Environment variables"
+			-> user variables & system variables 
+			-> variable name : "path"
+			-> variable value : "C:\Program Files\Java\jdk1.8.0_301\bin"
+
+		classpath: 
+
+			right click on "this pc"
+
+			-> click on "properties"
+			-> "Advanced properties"
+			-> "Environment variables"
+			-> user variables & system variables 
+			-> variable name : "classpath"
+			-> variable value : "C:\Program Files\Java\jdk1.8.0_301\lib"
+
+	3. Checking -> windows + r -> 
+
+		'javac' is not recognized as an internal or external command,
+		operable program or batch file.
+
+		-> display's help files then java is ready to develop and run.
+
+
+	INSIDE JAVA:
+
+		bin -> 
+
+			compilation -> javac
+			execute -> java
+			javah, javadoc, javap, jdb.......
+			
+		lib -> 
+
+			libraries -> 	Jar -> java archive files
+
+						
+					Ear -> entireprise archive files
+					war -> web archive files
+
+		include -> C and CPP -> internally using their methods.
+
+
+	First Program of java:
+
+		1. notepad
+		2. command prompt
+
+
+		compilation -> javac filename.java
+		interpretation -> java classname
+
+	Note: To standardize program , we should give filename and class name same.
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+Java Tokens:
+		
+
+
+
+		char a=90 -> character,size of memory, range 
+
+
+
+
+	shiva -> variable name
+	shiva() -> method name
+	shiva[] -> array name
+	"shiva" -> string literal
+
+
+Type casting:
+
+	-> converting one type of data type into another type.
+
+
+	-> two type of Type casting:
+		-> implicit type casting
+
+			jvm converts one type of data type into another one
+
+		-> explicit type casting
+
+			developers converts one type of data type into another one
+
+
+		upcasting & downcasting:
+
+		upcasting : 
+			-> lower datatype to higher one
+
+		downcasting :
+			-> higher datatype to lower one.
+
+
+	; -> terminator
+
+	grouping of valid tokens and ended with terminator ->statement
+
+	int a=10; 
+
+
+
+Variables:
+	
+	-> they are namespace given value and tend to change depending on requirement.
+
+	types of variables:
+
+	1. class or static variable
+	2. instance or non-static variable
+	3. local variable.
+
+
+	variable life :
+		-> within block {  } -> local variable
+		-> within class  -> class variable
+		-> within Object -> instance variable
+
+	Instance or non-static variable:
+
+		-> variable declare inside class and outside method without static keyword.
+		-> life span to this is till object exists.
+		-> they can be accessed only by objects
+		-> default values are given
+
+
+	Static or class variable
+		-> variable declare inside class and outside method with static keyword
+		-> life span to this it till class exists
+		-> they can be accessed directly or class name or object.
+		-> default values are give
+
+	local variable
+		-> variable declared inside class and method 
+		-> life span to this is till method exists
+		-> they can be accessed directly within same method.
+		-> does not contain default values.
+	
+
+
+
+
+note: public static void main(String arg[]) -> this is execution starting point.
+
+
+	default values for 
+
+		byte, short, int , long is 0
+		float is 0.0f
+		double is 0.00d
+		boolean is false
+		char is empty space
+
+
+
+	main -> public -> main method should be access from anywhere 
+		static -> main method should be loaded before object creation
+		void -> it is not returning any value
+		String arg[] -> default parameter for program -> Command line arguments
+
+
+
+
+Control statements:
+
+	-> statements which controls flow of execution are called constrol statements
+
+		Type :
+		-> Conditional or decision:
+
+			if...
+			if...else
+			if...else if....else
+			nested if...else
+			switch
+
+		-> Loop or iteration
+
+			while 
+				-> entry level check
+				-> if condition is false, not even single statement will get executed
+			do...while 
+				-> exit level check
+				->if condition is false, atleast once loop will get executed
+			for 
+				-> intilization, condition, iterations come in one place.
+			for-each
+
+		-> jump or unbranched:
+			
+			break
+			continue
+
+
+Note: -> to accept data from user:
+		-> Scanner class(predefined class, it belongs to java.util)
+
+			Steps:
+			1. import java.util.Scanner
+			2. Object creation of Scanner
+				Scanner sc=new Scanner(System.in);
+			3. converting data type 
+
+					int n=sc.nextInt();
+
+				byte -> nextByte()
+				short -> nextShort()
+				int -> nextInt()
+				long -> nextLong()
+				float -> nextFloat()
+				double -> nextDouble()
+				char -> next().charAt(0)
+				boolean -> nextBoolean()
+				String -> next() -> till one space 
+					  nextLine()-> accepts whole line with spaces.
+
+
+		
+
+
+
+
+		
+
+
+
+
+
+	
+
+
+
+
+
+

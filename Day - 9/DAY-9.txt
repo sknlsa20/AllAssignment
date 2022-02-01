@@ -1,0 +1,181 @@
+Day - 9
+
+	Recap:
+
+	XSD -> xml schema definition
+	-> mapping of xsd into xml
+	
+
+	JDBC -
+
+	java database connectivity
+	API -> application programming interface
+	
+
+	Data -> 
+	Database -> 
+	DBMS -> data base management system
+	
+		rdbms -> relational database mangement system
+			ex: orcle, mysql, sql server....
+
+		non-rdbms 
+			-> grphical representaion, collection
+
+			ex: no-sql, mongodb, bigdata , cassandra...
+
+
+	SQL -> structure query languge
+
+		DDL -> execute() -> boolean 
+		DML -> executeUpdate() -> int
+		DCL
+		DQL -> executeQuery() - resultset
+		TCL
+	types of drivers:
+	1. jdbc-odbc driver
+	2. native api driver
+	3. network protocol driver
+	4. thin driver
+
+
+	steps for jdbc connection:
+	1. Loading driver class
+	2. getting connection
+	3. create statement / prepare statement
+	4. execute query/ resultset
+	5. close
+
+	
+	1. Driver ->  Class.forName("com.mysql.cj.jdbc.Driver");
+	2. get connection -> DriverManager.getConnection(url, username, password);
+
+		url-> jdbc:mysql:@localhost:3306\shivadb
+	3. con.createStatement(); / con.preparedStatement(query with ??);
+
+	4. int, boolean, resultset
+	5. closing
+
+	-> Student management system:
+
+		Student, StudentDAO, StudentDAOImpl, main class
+
+--------------------------------------------------------------------------------------------------------
+
+
+web applications:
+
+	-> application which executes in server and is completely based request and response.
+
+	-> types of servers:
+		1. Database server -> mysql server, oracle server
+		2. web server -> apache tomcat -> HTML,CSS,JS, Servelts, JSP
+		3. application server -> Jboss, weblogic....-> web and enterprise applications
+
+	-> type of web applications:
+
+		1. static web application -> html, css, js
+		2. dynamic web application  -> request and response.
+
+
+		hyper text transfer protocol 
+		data communciation made between client and server.
+
+		Request -> it is a url information requested by client
+		Response -> it is a message responded to client from server
+
+
+		http methods:
+
+		Get -> data travels in message body
+		post -> data travels in url in message header
+		delete -> any information which has to be deleted at serverside
+		trace -> debugging
+		put -> any information to be added at sever side
+		patch -> extra
+		connect  -> connection between server and client
+		options -> all method types
+		
+
+		http request message:
+		1. url request,HTTP version, method type
+		2. host ip address
+		3. client ip address
+		4. content type -> text/html, image/gif, video/mp4, application/json......
+		5. user agent -> which browser
+		6. content-length ->data size
+		7. data which coming from client
+
+
+		http response message:
+		1. http status code(http version)
+				100-199 -> some information
+				200-299 -> success message
+				300-399 -> redirecting
+				400-499 -> client side errors
+				500-599 -> server side errors
+		2. time line -> date, time
+		3. server location
+		4. connection
+		5. content type
+		6. content length
+
+
+		Dynamic web application creation(server):
+		
+		1. file -> others -> web -> dynamic web project
+		2. name of project, target runtime -> apache tomcat , web module version -> <3		
+		3. web.xml
+
+
+		Server Side program:
+
+		Servlets & JSP
+
+		What is a Servlet:
+
+		-> it is a lightweight serverside programming.
+		-> it is an api to provide interface and classes to acheive serve side programming.
+		-> they are written on threads.
+		
+
+		Servlet has a life cycle:
+
+		1. Load servlet class
+		2. depending on request which servlet object.
+		3. initialization servlet
+		4. service is executed
+		5. destroys servlet.
+
+
+		how many ways we can create Servlet:
+		1. implmenting servlet interface
+
+
+init(ServletConfig config),destroy(), getServletConfig(),getServletInfo(),service(ServletRequest request, ServletResponse response)
+
+
+	flow : 
+
+		-> server started -> home.html -> web.xml-> submit -> action -> url mapping -> web.xml -> Servlet class -> service method.
+
+
+		2. extending GenericServlet
+
+			- it has already implemented Servlet interface.
+			- only required methods can be overridden
+		
+		3. extending HttpServlet -> http methods.
+
+
+	
+
+		
+
+
+
+
+
+
+
+	

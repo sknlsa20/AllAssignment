@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:s="http://www.student.com" xmlns:x="http://www.w3school.org/2001/XMLSchema-instance" x:schemaLocation="http://www.student.com student.xsd">
+<s:student>
+  <s:stdid>679</s:stdid>
+  <s:stdname>shiva</s:stdname>
+  <s:stdheight>6.7</s:stdheight>
+  <s:stdmobile>9898989</s:stdmobile>
+</s:student>
+
+<s:student>
+  <s:stdid>679</s:stdid>
+  <s:stdname>shiva</s:stdname>
+  <s:stdheight>6.7</s:stdheight>
+  <s:stdmobile>9898989</s:stdmobile>
+</s:student>
+</students>

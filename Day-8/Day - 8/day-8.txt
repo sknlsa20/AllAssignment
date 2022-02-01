@@ -1,0 +1,210 @@
+Day - 8:
+
+	XSD : 
+
+	-> xml schema definition
+	-> it contains its own tags
+	-> it contains many data types than DTD
+	-> cardinalities can be optimized depending our requirement.
+
+	<?xml version="1.0"?>
+	<schema>
+		<element>
+	</schema>
+
+
+	http://www.w3school.org/2001/XMLSchema
+
+	xmlns-> it is like import in java.
+
+	schemaLocation -> where is my xsd file.
+
+
+	schemaLocation -> http://www.w3school.org/2001/XMLSchema-instance
+
+
+	TYPES OF ELEMENTS :
+
+	1. SIMPLE
+			<stdid>789</stdid>
+	2. COMPLEX
+
+		i. element with child and with or without attribute
+		ii. element with text and attributes
+		iii. element empty and attribute
+		iv. element mixed content
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+JDBC API:
+
+	Java database connectivity (application programming interface)
+
+	data(related information) -> file, xml, yaml, json
+
+	permanent data storage -> databases 
+
+	databases -> it stores data with certain datastructure defined init.
+
+	DBMS -> database management system:
+			-> this is software which can manage data in defined data structure
+		RDBMS :
+			-> relational database management system
+			-> data is arrange in rows and cols format -> oracle, mysql, sql server, Ms-sql..
+
+		Non-RDBMS:
+			-> data is arranged in mapping format like collections-> key / value pairs
+			ex: 
+				mongodb, cassandra, bigdata
+
+
+	SQL -> structure Query Language :
+
+		these are commands used to interact with RDBMS
+
+		DDL -> data definition language -> create, alter, drop, desc, truncate
+		DML -> data manipulation language -> insert, update, delete
+		DQL -> data query language -> select
+ 		TCL -> Transaction control language -> commit, rollback, savepoint
+		DCL -> data control language -> grant , revoking
+
+
+	JDBC Driver ->
+
+		it is a component connect with java application and database.
+
+	Types of Drivers:
+
+		-> JDBC-ODBC Bridge Driver(partially java)
+		-> Native Driver(partially java)
+		-> Network protocol Driver(fully java)
+		-> Thin Driver(fully java)
+
+
+
+	1. JDBC-ODBC Bridge Driver:
+
+		advantages:
+
+		- easy to use
+		- can easily connect to any database
+
+		disadvantages:
+		- it has to convert java data into ODBC function calls
+		- ODBC driver has to be installed at client machine
+
+	note: java 8 features have made to remove JDBC-ODBC bridge driver.
+
+
+	2. Native API driver:
+
+		advantage:
+		- performance wise it is better than JDBC-ODBC driver
+
+		disadvantages:
+
+		- native drive has to be installed at client machine
+		- vendor libraries need to be stored in client machine
+
+
+	3. Network Protocol Driver :
+
+		advantage:
+		- no client side libraries are required
+
+		disadvantages:
+
+		- network support is required
+		- maintenance of network protocol becomes more costly
+		- chances of loosing data in case of disconnectivity
+
+
+	4. Thin driver:
+
+		advantages:
+		- better performance than all drivers
+		- no separate software required at clien side or server side.
+
+		disadvantage:
+
+		- Driver depends on database.
+
+
+	Steps to get connected with database:
+
+	1. Register Driver class (DriverManager)
+	2. Creating Connection
+	3. Create Statement
+	4. Getting Result by executing queries
+	5. closing connection and statement
+
+
+
+		if DDL -> boolean -> true, false -> execute() method
+		   DML -> int -> 1 , 2,   -> executeUpdate() method
+		   DQL -> ResultSet -> whole table with values -> executeQuery()
+
+
+	
+	DriverManager
+	Connection
+	Statement
+	ResultSet
+	ResultSetMetadata
+	DatabaseMetaData
+
+
+	Statement
+	PreparedStatement
+	CallableStatement -> calling sql functions and triggers
+
+
+	CRUD -> creating read update delete
+
+	Student Management system:
+
+	1. Adding student
+	2. deleting student
+	3. updateting student
+	4. displaying all students
+	5. exit
+
+
+	Student
+	StudentDAO(DataAccessObject)
+	StudentImplInterface
+
+	MainApplication
+
+
+
+
+
+
+
+			
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

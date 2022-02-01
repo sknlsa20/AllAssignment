@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3school.org/2001/XMLSchema"  targetNamespace="http://www.student.com" elementFormDefault="qualified">
+<xs:element name="students">
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="student" minOccurs="3" maxOccurs="unbounded">
+      <xs:complexType>
+         <xs:sequence>
+          <xs:element name ="stdid" type="xs:int"/>
+          <xs:element name ="stdname" type="xs:string"/>
+          <xs:element name ="stdheight" type="xs:double"/>
+          <xs:element name ="stdmobile" type="xs:int"/>
+         </xs:sequence>
+      </xs:complexType>   
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

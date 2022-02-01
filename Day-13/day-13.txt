@@ -1,0 +1,104 @@
+Day - 13:
+
+	SPEL-> spring expression language
+
+	-> these expressions give support for querying and manipulating objects at runtime.
+
+	SPEL API(application programming interface):
+
+	interface:
+	- Expression
+	- ExpressionParser
+	- EvaluationContext
+
+	classes:
+	- SpelExpression
+	- SpelExpressionParser
+	- StandardEvaluationContext
+
+
+-> MVC -> design pattern -> spring web MVC
+
+	it separates application logic from user interface.
+	Controller is an interface between view and model.
+
+	M -> model -> business layer
+	V -> view -> prsentation layer
+	C -> controller -> manages the flow of the application
+
+
+	webapplication layers:
+		-> presentation layer -> html, css, js, jsp, php
+		-> Application layer  -> servlets, spring
+		-> business layer -> bean, pojo
+		-> data base layer -> jdbc api, spring jdbctemplate, hibernate
+
+	Advantages:
+	1. Individual developers can work simultaneously(multiple developers can work on a single project).
+	2. improves scalability.
+	3. it is low dependent on each other
+	4. reuses of code
+	5. Easily adoptable of changes in application
+	6. easily extendable and testable.
+
+
+	Spring MVC : 
+
+		-> it is a java framework which is used to build web applications. 
+		-> it follows MVC design pattern with IOC and Dependency Injection.
+
+
+	spring mvc architecture:
+
+		1. Request
+		2. DispatcherServlet
+		3. HandlerMapping
+		4. Controller
+		5. ModelandView
+		6. ViewResolver
+		7. View
+
+
+
+	steps for spring MVC application:
+
+	1. create project -> maven
+	2. loading spring jars
+	3. create controller class
+	4. provide entry for controller in web.xml
+	5. define bean xml file
+	6. display messge in view page
+	7. start server and deploy
+
+
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+</bean>
+
+	@Controller
+	@RequestMapping
+	@RequestParam
+
+
+spring MVC form tag library:
+
+<%@taglib uri="http://www.springframwork.org/tags/form" prefix="form"%> 
+
+<form: form> -> it is container stores all remaing tags
+
+<form:input>
+<form:radiobutton>
+<form:password>
+<form:checkbox>
+<form:textarea>
+<form:select>
+
+	values to be autobinding.
+
+
+

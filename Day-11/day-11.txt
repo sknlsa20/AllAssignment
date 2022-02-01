@@ -1,0 +1,183 @@
+servlet :
+
+	session tracking
+	1. Cookies
+	2. url rewriting
+	3. hidden forms
+	4. HttpSession
+
+
+Jsp:
+
+	life cycle
+	- Translate JSP page
+	- compile
+	- load servlet
+	- instantiate
+	-jspInit()
+	-jspService()
+	-jspDestroy()
+
+	implicit objects:
+	- out
+	- request
+	- response
+	- config
+	- application
+	- session
+	- pageContext
+	- page
+	- exception
+
+	java code can be written in JSP:
+	1. scriplet
+	2. expression
+	3. declaration 
+
+	directivies:
+	- page
+	- include
+	- taglib
+
+	expression language:
+	-> to easily stored data
+			param, paramValus........
+
+	JSTL 
+	-> to avoid usage of scriplet 
+
+	1. core
+	2. functions
+	3. formatting
+	4. xml
+	5. sql 
+
+
+	CRUD application.
+
+--------------------------------------------------------------------------------------------------------
+
+	Maven 
+	-> it is build tool
+	-> it specify complete structure of project
+	-> it can download and load dependency jar files
+	-> automatically build and deploy
+			war, ear, jar -> server.
+
+		repository -> storage place
+
+
+	local repository
+	central repository
+	remote repository
+
+
+	commands:
+
+	-> validate
+	-> compile
+	-> test
+	-> package
+	-> integrated test
+	-> verify
+	-> install
+	-> deploy
+
+	POM -> project object model
+
+		-> dependencies
+		-> versions
+		-> plugins
+		-> properties
+
+
+	MVC -> model - Student -> data encasulated(getter & setter, constructors, methods)
+		view -> jsp or jstl
+		controller -> servlets
+
+
+	Spring framework
+		-> it is called lightweight framework.
+		-> it is also called as frameworks of frameworks -> hibernate,struts, ejb, jsf etc.
+
+	Advantages:
+
+	1. lightweight 
+	2. Loose coupling
+	3. easy to maintain or test
+	4. predefined templates.
+
+
+	class Address{
+
+		int hno;
+		String streetname;
+		String city;
+		String state;
+	}
+
+
+	class Student{
+	Address add;
+	}
+	dependency injection-> loose couple.
+	IOC and dependendy injections -> inversion of controller
+
+
+
+
+	First spring application:
+	1. project creationa and add dependency jar
+	2.applicationContext.xml
+	3. bean class -> private properties -> default constructor or parametric constructor
+						-> getter and setter methods.
+
+	4. main class
+
+
+	spring core -> IOC, Dependency injections, context, beans
+
+
+	IOC container:
+
+			they are used for instantiating, configuring and assemblin the objects 
+
+		types of containers;
+		1. BeanFactory
+		2. ApplicationContext -> web application, spring aop, message
+	
+		
+	spring core -> core, beans, context, expression language
+
+	modules -> JDBC, ORM, web, web mvc
+
+	Dependency injection:
+
+		these define design patter with enables loose coupling.
+
+	1. By Constructor
+	2. By setter methods
+
+	
+
+	Object class
+	CI
+	SI
+
+	Collection
+	CI
+	SI
+
+	Map
+	CI
+	SI
+
+	CI vs SI
+
+	Autowiring
+
+	spring JDBC template
+
+	
+
+	

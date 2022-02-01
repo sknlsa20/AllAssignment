@@ -1,0 +1,100 @@
+SI
+CI 
+
+	-> Bean class contains objects 
+
+SI
+CI 
+	-> Bean containing collection -> <list> or <set>
+	-> Bean containing Map
+
+Autowiring
+
+spring JDBC template
+
+-------------------------------------------------------------------------------------------------
+spring application with xml
+1. create a project and load jar files
+2. Bean class -> (private members and public getter methods with default constructor)
+3. appliationContext.xml
+4. Main class
+
+spring application with annotation:
+1. create a project and load jar files
+2. Bean class -> (private members and public getter methods with default constructor)
+3. bean configuration class
+4. Main class
+
+
+
+Differences between Setter Injection and Constructor Injection:
+
+	1. partially dependendy : 
+			- only by using setter methods.
+			- it is not possible using constructor
+
+	2. Overridding :
+
+			- IOC container will override setter methods on constructors.
+	3. Changes:
+
+			- using constructor new object has be made to apply changes.	
+			- using setter methods objects are not required to create but can be modified n number times.
+
+
+
+Autowiring:
+
+	-> it is a feature to create a bean automatically.
+	-> it internally uses setter and constructor injections.
+
+	-> it is used for less code generation.
+
+
+	Types:
+
+	1. ByName
+	2. ByType
+	3. Constructor
+	4. autodetect-> removed spring 3
+	5. no -> no default autowiring
+
+
+	IOC, DI -> ci, si, autowiring, 
+
+	spring DAO class -> JDBCTemplate, JPA, ORM 
+	
+
+	Disadvantages of JDBC API:
+	1. lots of code to written(creating connection, preparing statement, closing connection,stmt,...)
+	2. exceptions have to be handled
+	3. tightly coupled
+	4. repetition of codes from one to another database logic is a less
+
+
+	-> all above problems are resolved in spring jdbc:
+
+	JdbcTemplate example:
+	1. java project and load jars (core, beans,context, jdbc, tx, mysql, aop)
+	2. create Dao class, model class
+	3. configure jdbctemplate-> applicationContext.xml
+	4. main class
+
+
+	methods of JdbcTemplate
+
+	- public int update(Sqlquery);
+	- public int update(String sqlquery, Object...ars);
+	- public void execute(String sql) -> DDL 
+	- public Type execute(String sql,PreparedStatementCallBack action)
+	- public Type query(String sql, ResultSetExtractor rse) -> fetch records
+	- public List query(String sql, RowMapper rs) -> fetching records.
+	
+
+
+
+
+	
+
+
+	

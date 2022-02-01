@@ -1,0 +1,382 @@
+Day - 2:
+
+-> OOPS
+-> what is an object?
+-> what is a class?
+-> main features of OOPs
+-> types of inheritance
+-> types of polymorphism
+-> types of data abstraction
+-> constructor
+-> destructor
+-> interfaces & abstract classes
+-> dynamic binding & static binding
+-> this and super keyword.
+-> is-a and has-a
+------------------------------------------------------------------------------------------------------
+
+OOPS : 
+	-> Object oriented programming structure
+
+
+Object : 
+	-> instance of a class, a real time entity
+
+		every object contains features:
+		1. Identification
+		2. State
+		3. Behaviour
+
+
+	Lenova320 -> name of the object -> identification
+	color -> gray, weight -> 400 grms , shape -> rectangular,.......... -> state
+	listenClass(),browseInternet(), developApplication().......-> behaviour
+
+class :
+	Laptop(super class) -> Lenova(sub class) -> lenova320
+
+	-> collection of object and common properties of all objects.
+	-> blueprint to a object.
+	-> without class we cannot create an object.
+
+	-> once class is created we can create n number of object.
+
+
+method: 
+	It is a set of instruction declared with a namespace and can be called n number of times.
+	
+	-> Types of methods:
+		-> static or class method
+		-> non-static or instance method
+
+			Types of methods depending on return type and parameters
+			-> type 1 , without return type and without parameter
+			-> type 2 , without return type and with parameter
+			-> type 3 , with return type and without parameter
+			-> type 4, with return type and with parameter.
+
+	Student -> Business Logic Class
+	StudentMain -> Main Class
+
+
+Array: 
+
+	-> Collection of similar type data into a single unit with fixed size.
+	-> arrays acts as objects in java
+		single dimensional
+			int a[] = new int[size];
+
+		multi dimensional
+			int b[][]=new int[row][cols];
+
+				size = row * cols;
+
+			int c[][][]=new int[r][c][h];
+				size = r * c * h;
+
+
+
+
+		main features of OOPs : 
+
+		1. Data abstraction
+		2. Data encapsulation
+		3. Inheritance
+		4. Polymorphism
+
+		Data abstraction :
+
+			-> hiding unwanted data by providing set of services
+
+			ex: 
+				-> Car, mobile, television
+
+			In java , we use interfaces and abstract classes to acheive data abstraction.
+
+		Data Encapsulation:
+			
+			-> binding different type of data into a single entity with accessible properties.
+
+
+class -> which can only read
+
+		public class Employee {
+	
+	private int empid;
+	private String empname;
+	private String empaddress;
+	private double empsalary;
+	public int getEmpid() {
+		return empid;
+	}
+	public String getEmpname() {
+		return empname;
+	}
+	public String getEmpaddress() {
+		return empaddress;
+	}
+	public double getEmpsalary() {
+		return empsalary;
+	}
+	
+	
+	
+	
+
+}
+
+
+class -> which can only write
+
+			public class Employee {
+	
+	private int empid;
+	private String empname;
+	private String empaddress;
+	private double empsalary;
+	public void setEmpid(int empid) {
+		this.empid = empid;
+	}
+	public void setEmpname(String empname) {
+		this.empname = empname;
+	}
+	public void setEmpaddress(String empaddress) {
+		this.empaddress = empaddress;
+	}
+	public void setEmpsalary(double empsalary) {
+		this.empsalary = empsalary;
+	}
+	
+	
+	
+
+}
+
+		
+
+class -> which can read and write
+
+public class Employee {
+	
+	private int empid;
+	private String empname;
+	private String empaddress;
+	private double empsalary;
+	public int getEmpid() {
+		return empid;
+	}
+	public String getEmpname() {
+		return empname;
+	}
+	public String getEmpaddress() {
+		return empaddress;
+	}
+	public double getEmpsalary() {
+		return empsalary;
+	}
+	public void setEmpid(int empid) {
+		this.empid = empid;
+	}
+	public void setEmpname(String empname) {
+		this.empname = empname;
+	}
+	public void setEmpaddress(String empaddress) {
+		this.empaddress = empaddress;
+	}
+	public void setEmpsalary(double empsalary) {
+		this.empsalary = empsalary;
+	}
+	
+	
+	
+	
+
+}
+
+
+
+Eclipse : 
+	-> IDE -> Integrated development environment
+		-> Rapid application development for java
+
+		sysout -> ctrl + space
+--------------------------------------------------------------------------------------------------------
+
+		Inheritance: 
+
+				- aquiring properties from parent class to child class.
+				- it always follow IS_A realation
+				- It is mainly used for code reusability
+
+		Types of Inheritance: 
+			-> Single inheritance
+			-> multi-level inheritance
+
+				ex: 
+				Shape -> Triangle -> RightTriangle
+
+			-> multiple inheritance 
+			-> hybrid inheritance
+			-> hierarchal inheritance
+
+
+		Note: java does not support multiple and hybrid inheritance because of ambiquity problem
+		      - if parent classes have same method or variable calling it with child object becomes ambiquity.
+		
+		Polymorphism:
+
+		poly - many 
+		morphism - forms
+
+		types of polymorphism:
+		1. overloading or compile time
+		2. overriding or run time 
+
+
+	Overloading:
+
+		-> multiple methods with same name but differs with number of parameter or type of parameters.
+
+		-> inheritance is not mandatory.
+		-> it completely depends on parameters.
+
+
+	Overriding:
+
+		-> method with same name, same parameters and same number of parameters in parent and child classes
+		-> inheritance is mandatory
+		-> method signature should be same.
+
+		
+
+	Constructors:
+
+		-> it is used for constructing an object by initializing the values.
+		-> it is a method which contains same name as class name and explicitly does not contain any return type.
+		
+		Types of constructor:
+		1. default constructor
+		2. parametric constructor
+
+	Note: 
+		- n number of constructors can be available in a class by Overloading process.
+		- if parametric constructor is defined then jvm will not create default constructor.
+		- In inheritance , if child object is created then first it calls parent class constructor.
+
+
+	Dynamic binding:
+		- creating object of parent class with child class reference
+
+			Shape s = new Triangle();
+
+		note: using dynamic binding, we can get only overridden methods from triangle class.
+	Static binding:
+		- creating object of its own class by its own reference 
+
+			Triangle t=new Triangle();
+
+	
+
+
+Note: 
+	- Multiple classes can be available in a single file, only one class can be declared public class and file name should be same as public class name.
+
+
+	
+	
+	Destructors:
+
+		-> opposite of constructor is destructor.
+		-> to free's memory for other objects.
+
+		-> JVM  take cares of automatic destruction of objects.
+		-> when ever Object is not in reference then it sent garbage collection.
+		-> manually object has to be destroyed, then object reference is give null.
+
+			Triangle t =new Triangle();
+			t=null;
+
+	this and super keyword:
+		-> these keywords are used for instance members only.
+
+	this : 
+		this keywords always referece to present class instance members.
+
+			usage:
+				- this is used for variables
+				- this is used for methods
+				- this is used for constructor
+
+			Note: - this constructor calling should be first statement of the constructor.
+
+	super :
+		this keywords always referece to parent class instance members.
+		
+			usage:
+				- super is used for variables
+				- super is used for methods
+				- super is used for constructor
+			Note: - super constructor calling should be first statement of the constructor.
+
+		
+Data abstraction by Interface and abstract class:
+
+		Interface 
+			-> blueprint of a class.
+			-> 100% abstraction 
+			-> implements to call in a class.
+			-> interfaces contain abstract methods(method without implementation).
+			-> all methods should be implemented when implementing interface
+			-> till java 1.7, only abstract methods can be there
+			-> from java 1.8, static methods and default implemented methods.
+			-> variables declared by default become public static final.
+			-> variables should be initialized other wise they give compile time error.
+			-> interface does not contain constructors
+			-> they follow IS_A relation like inheritance.
+
+
+
+		Car -> applyBreak(), changeGear(), giveAccelarator()
+	
+
+		abstract class
+			-> class with atleast one abstract method is called abstract class
+			-> abstract method and class should be declare with keyword called abstract.
+			-> 0 - 100% abstraction
+			-> extends to call in a class.
+			-> abstract classes contain abstract methods and static or implemented methods.
+			-> unimplemented methods should be implemented when extending abstract class
+			-> static methods, non-static methods and unimplemented non-static methods can be available
+			-> it can contain static and non-static variables.	
+			-> abstract class contains constructors
+
+		
+
+
+--------------------------------------------------------------------------------------------------------
+Assignment:
+
+	The main objective is to create a system. which will help to maintain the bank account records, Maintain the transaction records of the customers. Easy to track all the banking activity a centralized system to maintain all the bank activity. Let’s check the project description with the role of different users.
+
+
+there is 2 main actor.
+
+Admin (Bank)
+User(Customer)
+
+Admin: Following activity performs by admin or bank user.
+
+
+The bank can ADD/EDIT/UPDATE new customers.
+Admin can ADD/EDIT/UPDATE Bank.
+
+The bank can ADD/EDIT/UPDATE transactions as per the customer request.
+
+
+User:  
+
+Users can register and login in to the application.
+The user can update his profile.
+Users can check the transaction history as well.
+
+

@@ -1,0 +1,254 @@
+Day - 3:
+
+	-> Innerclasses
+	-> java 1.8 concepts -> lambda expression, funtional interfaces
+	-> packages
+	-> java.lang -> Object, String, StringBuffer,StringBuilder, Exceptions
+
+	
+	Inner classes:
+		-> class declared inside another class is called inner classes
+		-> increases readability of code
+		-> type of relation is maintained
+		-> Code optimization
+
+
+	class Office{
+
+		class Department{
+
+		}
+		
+	}
+
+
+		Types of Innerclasses:
+
+		1. static nested class
+		2. non-static nested class
+
+			i. member inner class
+			ii. anonymous inner class
+			iii. Local inner class
+
+
+
+		anonymous object - object without a name;
+		anonymous class - class without a name;
+
+	java 1.8: 
+		-> Object oriented programming:
+
+			hello everyone
+
+		class Hello{
+			public static void main(String arg[])
+			{
+				System.out.println("hello everyone");
+			}
+		}
+
+-------------------------------------------------------------------------------------
+		void main()
+		{
+			printf("hello everyone");
+
+		}
+
+
+
+		Lambda expression : 
+
+			-> To get advantage of procedure oriented programming
+			-> code is getting decreased
+			-> readability is increasing
+			-> performance is increasing
+			-> we need funtional interface, without funtional interface we cannot write lambda expression.
+
+
+		funtional interface :
+			-> interface which contains only one unimplemented method is called functional interface.
+
+
+		public interface ArithmeticEx {
+	
+			public void display(int x,int y);
+
+		}
+
+
+		-> packagae java.util.funtion
+
+		/* find out greater amoung two numbers.*/
+
+
+		Task:
+
+		write each funtional interface example in a single program.
+
+
+
+	Package:
+		-> grouping relative classes and interface into a namespace.
+
+		Types of Packages:
+		-> Userdefined Packages
+		-> Predefined packages
+
+
+		Userdefined Package:
+
+		-> Depending on user requirement, if we define our own package it is called userdefined package.
+		-> it is defined with a keyword called "package".
+
+
+		Predefined Packages:
+		-> packages loaded from java installation for fulfilling our own requirements which are available in libraries.
+
+			java.lang
+			java.util
+			java.io
+			java.sql
+
+			javax.servlet.......
+
+
+				import java.util.*;(it makes performance slow)
+					or
+				import java.util.Scanner;
+
+
+
+		java.lang:
+
+			Object, wrapper classes, String,StringBuffer, StringBuilder, Exception, Thread....
+
+
+		Wrapper classes:
+
+			-> these classes are required to convert primitive data type into objects
+			and objects into primitive data
+
+			Primitive data type -> object (Autoboxing)
+			Object -> primitive data type (Unboxing)
+
+			primitive wrapper classes:
+			Byte, Short, Integer, Long, Double, Float, Boolean, Character....
+
+			-> Command line arguments:
+			process of sending default arguments to program.
+
+
+		Object: 
+
+			-> it is by default super class of all classes.
+		Constructors:
+
+		Object() -> one default constructor is defined , so that any class object can be created.
+
+		methods: 
+			-> clone(),equals(),hashCode(),getClass(),finalize(),wait(),notify(),toString(),notifyAll().
+
+
+
+
+		String
+
+			-> creating character sequence
+			-> it is immutable object
+			-> process of creating a new literal reference  in case modifying old value reference.
+
+		StringBuffer
+
+			-> creating character sequence
+			-> Mutable
+			-> Thread safe
+
+		StringBuilder
+			-> creating character sequence
+			-> Mutable
+			-> Thread Safety not available
+
+
+Task:
+Write a program to demonstrate all methods of String, StringBuffer and StringBuilder classes
+
+
+
+		Exception:
+
+		-> unexpected object created and disturbs flow of execution of program is called exception and these can be handled.
+
+		-> execution can be roll back
+
+		Error: 
+
+		-> unexpected object created and disturbs flow of execution of program is called exception and these can not be handled.
+
+		-> execution should start from beginning again.
+
+
+		Exception handlers:
+
+			try, catch , finally, throw, throws
+
+		Types of exceptions:
+
+			-> Checked Exception -> at compile time these are checked
+				FileNotFoundException, IOException, SQLException...
+
+			-> Unchecked Exception-> at runtime these are checked
+				ArithmeticException, NullPointerException, ArrayIndexOutofBounds..
+
+		Exception hierarchy:
+
+			Object -> Throwable -> Exception & Error
+
+		UserDefined Exception:
+
+			-> Depending on user requirement , if self exception is created then it is called Userdefined Exception.
+	
+			1. user defined exception should be child class of Exception
+			2. User defined exception class should contain constructure with string
+			3. User defined exception class should call super class constructor.
+
+
+	
+		throw:
+			-> Inside method , if we need to throw an exception.
+			-> it can throw only one exception at a time
+	
+		throws:
+			-> With method signature , if we need to throw exceptions.
+			
+
+
+
+
+		
+
+
+
+
+
+
+		
+
+			
+
+
+
+			
+
+
+		
+		
+
+
+
+
+
+
+
+
+

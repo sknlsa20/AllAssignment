@@ -1,0 +1,142 @@
+Day - 14:
+
+	-> MVC -> design pattern
+
+		Model :
+		View :
+		Controller :
+
+
+	-> Spring MVC : 
+
+		-> frame work it is used for developing web application , MVC architecture and IOC, DI.
+	-> Spring mvc architecture:
+
+		-> request
+		-> DispatcherServlet
+		-> HandlerMapping
+		-> Controller
+		-> ModelandView
+		-> ViewResolver
+		-> view
+		-> response.
+
+
+	-> first application:
+
+		-> creating maven web project and loading jars
+		-> web.xml -> DispatcherServlet
+		-> writing our own controller
+		-> mapping to spring-servlet.xml
+		-> model class has to be created
+		-> url mapping configured to jsp
+		-> deploy project and run it.
+
+	-> spring web MVC without web.xml and spring-servle.xml
+
+		-> creating maven web project and loading jars
+		-> Webintializer
+		-> writing our own controller
+		-> Configuration class
+		-> model class has to be created
+		-> url mapping configured to jsp
+		-> deploy project and run it.
+
+
+	InternalResourceViewResolver irv=new InternalResourceViewResolver();
+
+ 	ViewResolver:
+
+		-> it is a model used for getting page in browser.
+
+
+		jsp, jstl,velocity, view.xml, view.properties.
+
+	Types of viewResolver:
+	1. AbstractCachingViewResolver
+	2. XmlViewResolver -> view.xml 
+	3. ResourceBundleViewResolver -> view.properties.
+	4. UrlBasedViewResolver -> http://www.google.com -> google.jsp
+	5. InternalResourceViewResolver -> jsp, jstl
+	6. VelocityViewResolver -> subclass -> templates
+	7. ContentNegotiatingViewResolver -> viewResolver -> urlmapping
+
+
+	
+
+---------------------------------------------------------------------------------------
+
+what is Git?
+what is Github?
+Life cycle?
+how to work with git and github in eclipse?
+
+-> commit
+-> push
+-> pull
+-> branching
+-> raising pull request
+-> approve pull request
+-> merge project
+
+
+
+-> git or git hub -> distributed version controlling systems.
+
+		-> they can manage small or big projects.
+		-> linus torvald -> linux operating system
+		-> project management -> git
+
+	- Local repository -> developers own working area where he/she can manage project, make changes, update project, work on it.
+
+	- Remote repository -> overall users where they can pull, push, merge project.
+
+
+	what is git?
+
+		-> it is a revision control system used to track chages in our own systems. its a tool
+to mange code and files while coordinating work remotely.
+
+
+	-> manager
+
+		
+	-> developer
+
+	
+	step1(manager):
+		-> create project and requirement
+		-> create local repository
+
+search -> git repository -> create new gitrepository
+		-> adding files to staging
+
+-> right click on project -> team -> share project-> existing local repository
+-> right click on project -> team -> add indexes
+
+		-> commiting files to local repository(git)
+
+
+-> right click on project -> commit -> username and comment
+
+		-> push it remote repository(github)
+
+
+-> collaborators -> add people -> 
+
+
+
+
+
+	-> project created in working area of manager
+	-> ADD -> it is used for adding files from working area into staged area
+	-> Commit -> From staged area they are brought to commited area 
+	-> PUSH -> form commited ared files can be pushed to remote repository.
+	-> pull request to developers
+
+
+
+
+
+	
+

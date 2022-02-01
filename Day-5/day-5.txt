@@ -1,0 +1,231 @@
+Day - 5:
+	Map: 
+	-> elements to accessed based key and value pair.
+	
+Generic: 
+	-> type of elements are fixed, so that we need not type casting while adding and retrieving.
+
+
+	HashMap(1.2v):
+	features:
+	-> growable in hashtable structure
+	-> insertion order is not preserved
+	-> duplicates are not allowed in keys but values can be duplicates
+	-> null can be inserted only once in keys.
+	-> implements Serializable and Cloneable
+	-> contains homogeneous and heterogeneous elements
+
+	Constructors:
+	- HashMap hm =new HashMap();
+	- HashMap hm = new HashMap(int initialcapacity);
+	- HashMap hm = new HashMap(int initialcapacity, float fr);
+	- HashMap hm = new HashMap(Map m);
+
+
+	LinkedHashMap(1.4v):
+	features:
+	-> growable in hashtable structure
+	-> insertion order is preserved
+	-> duplicates are not allowed in keys but values can be duplicates
+	-> null can be inserted only once in keys.
+	-> implements Serializable and Cloneable
+	-> contains homogeneous and heterogeneous elements
+
+	Constructors:
+	- LinkedHashMap hm =new LinkedHashMap();
+	- LinkedHashMap hm = new LinkedHashMap(int initialcapacity);
+	- LinkedHashMap hm = new LinkedHashMap(int initialcapacity, float fr);
+	- LinkedHashMap hm = new LinkedHashMap(Map m);
+
+	Hashtable(1.0 v):
+	features:
+	-> growable in hashtable structure
+	-> insertion order is not preserved
+	-> duplicates are not allowed in keys but values can be duplicates
+	-> null can be inserted only once in keys.
+	-> implements Serializable and Cloneable
+	-> contains homogeneous and heterogeneous elements
+	-> thread safety is available
+	-> All methods by default synchronized.
+
+
+	Constructors:
+	- Hashtable hm =new Hashtable();
+	- Hashtable hm = new Hashtable(int initialcapacity);
+	- Hashtable hm = new Hashtable(int initialcapacity, float fr);
+	- Hashtable hm = new Hashtable(Map m);
+
+	Properties:
+
+	-> growable in hashtable structure
+	-> insertion order is not preserved
+	-> duplicates are not allowed in keys but values can be duplicates
+	-> null can be inserted only once in keys.
+	-> implements Serializable and Cloneable
+	-> contains homogeneous and heterogeneous elements
+	-> thread safety is available
+	-> All methods by default synchronized.
+	-> key and value should be strings.
+
+	Constructors:
+	- Properties p = new Properties();// default constructor
+	- Properties P = new Proeperties(Properties p);
+
+	TreeMap:
+	-> growable in hashtable structure and binary tree structure
+	-> insertion order is not preserved
+	-> duplicates are not allowed in keys but values can be duplicates 
+	-> any kind of sorting order based on keys.
+	-> null can be inserted only if keys are empty.
+	-> implements Serializable and Cloneable
+	-> contains homogeneous elements
+
+	Constructors:
+	- TreeMap tm =new TreeMap();
+	- TreeMap tm =new TreeMap(Comparator c);
+	- TreeMap tm = new TreeMap(SortedMap s);
+	- TreeMap tm = new TreeMap(Map m);
+
+
+
+	WeakHashMap:
+	-> growable in hashtable structure
+	-> insertion order is not preserved
+	-> duplicates are not allowed in keys but values can be duplicates
+	-> If key is made null reference then automatically value is also elgible for Garbage collection
+	-> implements Serializable and Cloneable
+	-> contains homogeneous and heterogeneous elements
+
+
+	Constructors:
+	- WeakHashMap hm =new WeakHashMap();
+	- WeakHashMap hm = new WeakHashMap(int initialcapacity);
+	- WeakHashMap hm = new WeakHashMap(int initialcapacity, float fr);
+	- WeakHashMap hm = new WeakHashMap(Map m);
+
+
+	IdentityHashMap:
+
+	-> growable in hashtable structure
+	-> insertion order is not preserved
+	-> duplicates are not allowed in keys but values can be duplicates but they are checked using "=="
+	-> If key is made null reference then automatically value is also elgible for Garbage collection
+	-> implements Serializable and Cloneable
+	-> contains homogeneous and heterogeneous elements
+
+	
+	Constructors:
+	- IdentityHashMap hm =new IdentityHashMap();
+	- IdentityHashMap hm = new IdentityHashMap(int initialcapacity);
+	- IdentityHashMap hm = new IdentityHashMap(int initialcapacity, float fr);
+	- IdentityHashMap hm = new IdentityHashMap(Map m);
+
+
+
+	Stream API -> (java 1.8 version):java.util.stream
+
+	-> Applying multiple functionalities on collection object it can passed a stream.
+
+
+		Vector v =new Vector();
+
+		Stream s = v.stream();
+
+		filter()
+		map()
+		sorted()
+		max()
+		min()
+		collect()
+		count()
+		forEach()
+
+		.......................................................................
+
+
+		filter(Predicate p)-> filter data from given collection
+
+		map(function )-> all elements in collection should be update
+
+		sorted() -> default ascending order.
+
+		sorted(Comparator c)-> customized sorting order
+
+
+
+
+	-> write a program to accept n number of elements without duplicates.
+		each element should be squared and printed in separate collection object.
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+	java.util:
+
+		Scanner,
+
+		Collections,
+
+		Date,
+
+		Calendar,
+
+		java 8 verison -> java.time
+
+				Clock,Duration,Instant,LocalDate,LocalDateTime,LocalTime,MonthDay,OffsetDateTime,OffsetTime,Period,Year,YearMonth,
+ZonedDateTime,ZoneId,ZoneOffset
+
+
+	java.io:
+		-> It completely deals with Input and Output parameter to the program.
+
+	Input and output in java :
+			- File
+			- Console
+			- Socket
+
+		InputStream and OutputStream :
+
+			- data either can be int byte array format or char array format.
+			- InputStream and OutputStream deal with byte array format
+			- Reader & Writer deal with character array format.
+
+
+
+		PipedInputStream and PipedOutputStream :
+			these classes are used to work on same file simultaneously.
+
+
+
+
+Task:
+
+- write a program to accept n number of values which does not contain dupicates in it , 
+	arrange them is ascending order and send them to ascending.txt file.
+	arrange them is descending order and send them to descending.txt file.
+	if elements are even numbers then add them even.txt file
+	if elements are odd numbers then add them odd.txt file
+	if each element is prime then add them to prime.txt file
+	if each element is perfect then add them to perfect.txt.
+
+	6 -> 1,2,3 = 6
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+	
+	
+
+
+	

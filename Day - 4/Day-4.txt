@@ -1,0 +1,442 @@
+Day - 4 :
+
+		java.lang 
+
+		Wrapper classes, Object, String , StringBuffer, StringBuilder,Exception, Math, 
+
+		Thread:
+
+		-> it is lightweight sub program
+		-> it has its own individuality
+		-> sub task which can work individualy without depending on other tasks and share same memory.
+
+
+		multi-tasking-> 
+
+			multi-threading
+			multi- processing
+
+		Task :
+
+		write a program to print 1-100 not in sequence.
+		
+		1-25
+		26-50
+		51-75
+		76-100
+
+		Threads advantage:
+		-> they share same memory
+		-> they are not inter dependent.
+
+		Types of creating Thread:
+
+		1. Extending Thread
+		2. Implementing Runnable
+
+
+-> write a program to print table of a given number and print 1 -n in two different threads and execute them.
+
+
+
+		Runnable interface -> Functional interface 
+
+		Life cycle of thread:
+
+		1. Born
+
+			Thread1 t1=new Thread1();
+
+		2. Runnable
+
+			t1.start();
+
+
+		3. Running
+
+			run() method gets executed
+
+		4. non-runnable
+
+			present thread is in waiting, sleep, suspend......
+
+		5. dead
+			run() execution completes
+
+
+		methods related thread in object class:
+
+		wait()
+		notify()
+		notifyAll()
+			thread inter communiation.
+
+
+	Java.util:
+
+
+		Scanner
+		Collection
+
+
+
+	Array : 
+		-> Collection of objects
+		
+		disadvantage:
+		- Fixed in size.
+		- homogeneouse element
+
+	difference between array and collection:
+
+	array:
+	1. fixed in size
+	2. predefined method support is not provided for arrays
+	3. only homogeneous elements
+	4. primitive data type and objects can be added
+	
+	collection: 
+	1. growable in nature
+	2. every collection object predefined method support is provided
+	3. homogeneous and hetero geneous 
+	4. only objects can be added
+
+	Collection Frame work:
+
+		classes and interaces used for creating , manipulating and mainting collection objects.
+
+	9 Interfaces in Collection frame work:
+
+	1. Collection
+	2. List
+	3. Set
+	4. SortedSet
+	5. NavigableSet
+	6. Queue
+	7. Map
+	8. SortedMap
+	9. NavigableMap
+
+	-> difference between Collection and Collections
+
+		Collection is an interface which is used for creating collection object.
+		Collections is a utility class which provides predefined methods for collection objects
+
+
+	Collection(1.2 v):
+		-> grouping of elements
+
+
+		List(1.2v):
+
+			-> Duplicates should be allowed
+			-> insertion order is preserved
+			-> it is completely index based
+			-> null value insertion should be possible.
+
+			Implemented classes:
+
+			ArrayList(1.2v):
+
+				features:
+				1. growable in array data structure and growable in array
+				2. best for search and retrival operations.
+				3. worst for inserting and deleting operations.
+				4. implements Serializable, Cloneable and RandomAccess interface.
+				5. homogeneous & heterogeneous elements
+
+
+			***Marker interface : interface which is empty and without any methods 					declaration.
+
+			interface eatable{
+
+			}
+
+				Constructors:
+				- ArrayList al =new ArrayList();// capacity -> 10 , nc = pc*3/2 + 1
+				- ArrayList al = new ArrayList(int initialcapacity);
+				- ArrayList al = new ArrayList(Collection c);
+				
+			LinkedList(1.2v):
+
+				features:
+				1. growable in node data structure.
+				2. worst for search and retrival operations.
+				3. best for inserting and deleting operations.
+				4. implements Serializable and Cloneable.
+				5. homogeneous & heterogeneous elements
+
+				Constructors:
+
+				LinkedList ll = new LinkedList();
+				LinkedList ll = new LinkedList(Collection c);
+
+
+			Vector(1.0v):
+				
+				features:
+				1. growable in array data structure
+				2. best for search and retrival operations.
+				3. worst for inserting and deleting operations.
+				4. implements Serializable, Cloneable and RandomAccess interface.
+				5. homogeneous & heterogeneous elements
+				6. thread safety available
+				7. All methods are synchonized.
+				8. its a legacy class
+				
+				Constructors:
+				- Vector v =new Vector();
+				- Vector v = new Vector(int initialcapacity);
+				- Vector v = new Vector(int initialcapaicty, int inccapacity);
+				- Vector v = new Vector(Collection c);
+
+				Stack class(1.0v):
+
+				features:
+				1. it follows LIFO data structure.
+
+				Constructor:
+				- Stack s = new Stack();
+
+Cursors:
+	
+	Iterator:
+		-> it is called universal cursor.
+		-> It can be applied on all collection objects
+		-> methods -> next(),hasNext(),remove()
+		-> retreive, search, delete
+		-> uni direction
+
+	ListIterator:
+		-> it is called List cursor.
+		-> It can be applied on ArrayList, LinkedList , Vector and Stack.
+		-> methods -> next(),hasNext(),remove(),add(),previous,hasPrevious()....
+		-> retreive, search,update, delete and add
+		-> bio direction
+
+	Enumeration:
+		-> it is called legacy cursor.
+		-> It can be applied on Vector and Stack
+		-> methods -> nextElement(),hasNextElement()
+		-> retreive, search
+		-> uni direction
+
+		Set:
+			-> No duplicates should be allowed
+			-> insertion order is not mandatory
+			-> null value insertion possible only one time.
+
+Note: equals(), when ever values are inserted , it is checked with this method to avoid duplicates. 
+
+
+			HashSet(1.2):
+				features:
+				1. growable in hashtable structure
+				2. insertion order is not preserved
+				3. homogeneous & heterogeneous
+				4. implements Serializable & Cloneable
+				5. null insertion possible only one time
+
+				Constructor:
+				HashSet hs =new HashSet(); // capacity - 16, lf or fill ratio 0.75
+				HashSet hs =new HashSet(int initialcapacity);
+				HashSet hs =new HashSet(int initialCapacity, float fillratio);
+				HashSet hs = new HashSet(Collection c);
+
+
+			LinkedHashSet(1.4):
+				features:
+				1. growable in hashtable structure
+				2. insertion order is preserved
+				3. homogeneous & heterogeneous
+				4. implements Serializable & Cloneable
+				5. null insertion possible only one time
+
+				Constructor:
+				LinkedHashSet hs =new LinkedHashSet(); // capacity - 16, lf or fill ratio 0.75
+				LinkedHashSet hs =new LinkedHashSet(int initialcapacity);
+				LinkedHashSet hs =new LinkedHashSet(int initialCapacity, float fillratio);
+				LinkedHashSet hs = new LinkedHashSet(Collection c);
+
+			TreeSet(1.2v):
+				features:
+				1. growable in hashtable and binary tree structure
+				2. any kind of sorting order
+				3. homogeneous
+				4. implements Serializable & Cloneable
+				5. null insertion possible if no values available
+
+				Constructors:
+
+				- TreeSet ts =new TreeSet();
+					default ascending order
+				- TreeSet ts =new TreeSet(Comparator c);
+					userdefined sorting
+				- TreeSet ts = new TreeSet(SortedSet s);
+				- TreeSet ts = new TreeSet(Collection c);
+
+		Note:
+		- object which are getting implemented with comparable, can only be added to TreeSet
+				
+
+		Queue:
+			-> prior insertion order 
+			-> FIFO process is followed.
+
+			add(e) -> adding element, exception
+			offer(e) -> adding element, special value
+
+			remove() -> remove element, exception
+			poll() -> delete element, special value
+
+			element() -> first element, exception
+			peek() -> first element, special value
+
+			PriorityQueue:
+				features:
+				-> it follows hashtable structure and growable in array structure
+				-> elements are priorly insert order
+				-> homogeneous
+				-> implements Serializable & Cloneable
+				-> null insertion possible
+
+				Constructors:
+				-> PriorityQueue pq=new PriorityQueue(); //dc - 11 -> natural sorting order
+				-> PriorityQueue pq=new PriorityQueue(Comparator c); 
+				-> PriorityQueue pq=new PriorityQueue(int initialcapacity); 
+				-> PriorityQueue pq=new PriorityQueue(int initialcapacity,Comparator c);
+				-> PriorityQueue pq=new PriorityQueue(priorityQueue pq);
+				-> PriorityQueue pq=new PriorityQueue(SortedSet ss);
+				-> PriorityQueue pq=new PriorityQueue(Collection c);
+
+			Deque:
+				-> it contains which can support FIFO and LILO process
+
+				addFirst(e) exception
+				offerFirst(e) special value
+				addLast(e) exception
+				offerLast(e) special value
+				removeFirst() exception
+				pollFirst() special value
+				removeLast() exception	
+				pollLast() special value
+				getFirst() exception	
+				peekFirst() special value	
+				getLast() exception	 
+				peekLast() special value	
+
+
+		java.util.concurrent:
+			ArrayBlockingQueue:
+				features:
+				-> it follows hashtable structure and growable in array structure
+				-> worst for adding and removing elements
+				-> best for retreiving and search
+				-> homogeneous
+				-> implements Serializable & Cloneable
+				-> null insertion possible
+				-> size is fixed.
+				-> insertion order is preserved
+
+				Constrcutors:
+				ArrayBlockingQueue aq = new ArrayBlockingQueue(int capacity);	
+				ArrayBlockingQueue aq = new ArrayBlockingQueue(int capacity, boolean flag);
+				ArrayBlockingQueue aq = new ArrayBlockingQueue(int capacity,boolean flag, Collection c);
+				
+			LinkedBlockingQueue:
+				features:
+				-> it follows hashtable structure and growable in array structure
+				-> best for adding and removing elements
+				-> worst for retreiving and search
+				-> homogeneous
+				-> implements Serializable & Cloneable
+				-> null insertion possible
+				-> size is fixed.
+				-> insertion order is preserved
+
+				Constructor:
+				LinkedBlockingQueue lbq=new LinkedBlockingQueue();// maximu size integer range
+				LinkedBlockingQueue lbq=new LinkedBlockingQueue(int initialcapacity);
+				LinkedBlockingQueue lbq=new LinkedBlockingQueue(Collection c);
+
+
+			LinkedBlockingDeque:
+				features:
+				-> it follows hashtable structure and growable in array structure
+				-> best for adding and removing elements
+				-> worst for retreiving and search
+				-> homogeneous
+				-> implements Serializable & Cloneable
+				-> null insertion possible
+				-> size is fixed.
+				-> insertion order is preserved
+				-> FIFO & LILO
+
+				Constructor:
+				LinkedBlockingDeque lbq=new LinkedBlockingDeque();// maximu size integer range
+				LinkedBlockingDeque lbq=new LinkedBlockingDeque(int initialcapacity);
+				LinkedBlockingDeque lbq=new LinkedBlockingDeque(Collection c);
+
+
+			PriorityBlockingQueue:
+				features:
+				-> it follows hashtable structure and growable in array structure
+				-> homogeneous and heterogeneous
+				-> implements Serializable & Cloneable
+				-> null insertion possible
+				-> size is fixed.
+				-> insertion order is preserved priorily
+				-> they are arranged is some kind of sorting order.
+
+				Constructors:
+				PriorityBlockingQueue pq = new PriorityBlockingQueue()// 11, default sorting
+				PriorityBlockingQueue pq = new PriorityBlockingQueue(int intialcapacity)
+				PriorityBlockingQueue pq = new PriorityBlockingQueue(int intialcapacity,Comparator c)
+				PriorityBlockingQueue pq = new PriorityBlockingQueue(Collection c)
+				
+			
+
+
+	Map:
+		-> grouping of elements with there key and value pairs.
+
+
+Assingments:
+
+- Create a multithreaded program by creating a subclass of Thread and 
+then creating, initializing, and staring two Thread objects from your 
+class. The threads will execute concurrently and display Java is hot, 
+aromatic, and invigorating to the console window. 
+
+- Create a multithreaded program as in the previous exercise by creating 
+the MyThread subclass of Thread. But create threads as objects of the 
+class MyClass, which is not a subclass of Thread. MyClass will 
+implement the runnable interface and objects of MyClass will be 
+executed as threads by passing them as arguments to the Thread 
+constructor.
+
+
+- Write a program to sort ArrayList in descending order? 
+
+- Write a program to reverse ArrayList in java? 
+
+- Bank application should be converted into collections.
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+		
+

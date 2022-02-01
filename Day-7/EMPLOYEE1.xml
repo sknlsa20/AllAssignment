@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  employees[
+<!ELEMENT employees (employee)*>
+<!ELEMENT employee (eid,ename,eage+,eaddress,esalary,emobile,ejoiningdate,eactive,ebonus)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT eage (#PCDATA)>
+<!ELEMENT eaddress (#PCDATA)>
+<!ELEMENT esalary (#PCDATA)>
+<!ELEMENT emobile EMPTY>
+<!ATTLIST emobile house CDATA #REQUIRED>
+<!ATTLIST emobile office CDATA #REQUIRED>
+<!ELEMENT ejoiningdate (#PCDATA)>
+<!ELEMENT eactive (#PCDATA | active)*>
+<!ELEMENT active (#PCDATA)>
+<!ELEMENT ebonus ANY>
+]>
+
+<employees>
+		<employee>
+			<eid>121</eid>
+			<ename>shiva</ename>
+			<eage>17</eage>
+			<eaddress>some data</eaddress>
+			<esalary>57000.75</esalary>
+			<emobile house="78797998" office='898989898'></emobile>
+			<ejoiningdate>17/02/2022</ejoiningdate>
+			<eactive><active>yes</active></eactive>
+			<ebonus>null</ebonus>
+		</employee>		
+		
+		<employee>
+			<eid>121</eid>
+			<ename>shiva</ename>
+			<eage>17</eage>
+			<eaddress>some data</eaddress>
+			<esalary>57000.75</esalary>
+			<emobile house="78797998" office='898989898'></emobile>
+			<ejoiningdate>17/02/2022</ejoiningdate>
+			<eactive>true</eactive>
+			<ebonus>null</ebonus>
+		</employee>	
+	</employees>
+
+

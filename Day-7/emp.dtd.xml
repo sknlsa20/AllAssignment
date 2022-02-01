@@ -1,0 +1,11 @@
+<!ELEMENT employees (employee)>
+<!ELEMENT employee (eid,ename,eage,eaddress,esalary,emobile,ejoiningdate,eactive,ebonus)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT eage (#PCDATA)>
+<!ELEMENT eaddress (#PCDATA)>
+<!ELEMENT esalary (#PCDATA)>
+<!ELEMENT emobile (#PCDATA)>
+<!ELEMENT ejoiningdate (#PCDATA)>
+<!ELEMENT eactive (#PCDATA)>
+<!ELEMENT ebonus (#PCDATA)>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xe:schema xmlns:xe="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://www.emp.org" elementFormDefault="qualified">
+			<xe:element name ="employee">
+				<xe:complexType>
+					<xe:sequence>
+						<xe:element name="empid" type="xe:int"/>
+						<xe:element name= "empname" type="xe:string" minOccurs="0" maxOccurs="unbounded"/>
+						<xe:element name= "empsalary" type="xe:decimal"/>
+					</xe:sequence>
+				</xe:complexType>
+			</xe:element>
+			</xe:schema>

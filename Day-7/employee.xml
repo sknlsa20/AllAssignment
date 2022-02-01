@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<employees>
+		<employee>
+			<empid>121</empid>
+			<empname>shiva</empname>
+			<empage>17</empage>
+			<empaddress>some data</empaddress>
+			<empsalary>57000.75</empsalary>
+			<empmobile value="68979799 7899878"></empmobile>
+			<empjoiningdate>17/02/2022</empjoiningdate>
+
+			<empactive>true</empactive>
+			<empbonus>null</empbonus>
+		</employee>		
+	</employees>

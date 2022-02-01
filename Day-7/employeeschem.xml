@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<employees xmlns:s="http://www.emp.org" xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:schemaLocation="http://www.emp.org emp.xsd">
+<s:employee>
+  <s:empid>234</s:empid>
+  <s:empname>pk</s:empname>
+  <s:empsalary>75000</s:empsalary>
+</s:employee>
+
+<s:employee>
+  <s:empid>567</s:empid>
+  <s:empname>gk</s:empname>
+  <s:empsalary>900000</s:empsalary>
+</s:employee>
+</employees>

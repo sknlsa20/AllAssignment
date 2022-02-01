@@ -1,0 +1,423 @@
+
+Day 1 - 5 -> core java
+Day 6 -> UI -> user interface -> web application 
+
+	front end  -> UI, UX (HTML, CSS, JS, Angular JS, bootstrap, react js, jquery, adobe dream viewers)
+	back end -> JSP, servlets, JDBC, spring , hibernate.....
+
+	middle ware -> JSON, XML, YAML......
+
+	Tools : editplus(editor), eclipse(IDE), sts, visualstudio, tomcat, junit, maven, xml validator, json converter, yaml validator, Ant , git, github -> project version controllers
+
+
+
+Day - 7 : JSON, XML and YAML
+
+
+JSON:
+
+	what is json?
+	uses of json?
+	characters of json?
+	Data types of json?
+	Json syntax
+	Json examples number, string, boolean, object, array, object inside an array.
+
+
+	What is Json:
+		-> Java script Object Notation.
+		-> Douglas crockford
+		-> very simple and human readable
+		-> extention of JS
+		-> extension is given as .json
+		-> web content -> application/JSON
+		-> it is represent in key and value pair.
+
+
+	Uses :
+
+		-> Transfer data in web application from server to client and viceversa
+		-> Web services
+		-> cross platform application
+		
+	Characters:
+
+		-> easy to read and write
+		-> light weight
+		-> language independent
+
+	Datatypes support by JSON:
+
+		-> Number
+		-> String
+		-> Boolean
+		-> Null
+		-> Object
+		-> Array
+
+	JSON syntax:
+		-> key/value pair
+		-> data should be separated by commos
+		-> objects should contain {}
+		-> arrays should contain []
+
+		{
+			key: value,
+			key: value
+		}
+
+		Arrays:
+
+		[
+			"","",""
+		]
+
+
+	Examples of JSON:
+
+
+	Employee 
+		empid-> 121
+		empname-> shiva
+		empage -> 17
+		empaddress -> hno, streetname, colony, city, country, pincode(object)
+		empsalary -> 57000.75
+		empmobile -> 68979799,7899878
+		empjoiningdate -> 17/02/2022
+		empactive ->true 
+		empbonus -> null
+
+
+		empid-> 143
+		empname-> kumar
+		empage -> 21
+		empaddress -> hno, streetname, colony, city, country, pincode(object)
+		empsalary -> 75600.90
+		empmobile -> 667676767,456755466
+		empjoiningdate -> 01/01/1995
+		empactive ->true 
+		empbonus -> 5000
+
+		-> Number
+
+			{ 
+				"empid": 121,
+				"empage": 17,
+				"empsalary": 57000.75,
+				"empmobile":  68979799
+			}
+
+
+		-> String
+
+			{
+				"empname": "shiva",
+				"empjoiningdate": "17/02/2022"
+			}
+		-> Boolean
+
+			{
+				"empactive": true
+			}
+
+		-> Null
+
+			{
+				"empbonus": null
+			}
+
+		-> Object
+
+			{
+				"empaddress": 	{
+							"hno":"13-112",
+							"street": "aparna street",
+							"colony": "some colony",
+							"city": "patna",
+							"state": "bihar",
+							"pincode": 500302
+						}
+			}
+		-> Array
+
+			{
+				"fruits": 	[
+							"onion",	
+							"spring onion",
+							"carrot"
+
+						]
+			}
+
+
+YAML : 
+
+	- what is YAML?
+	- uses of YAML
+	- YAML tools
+	- comments
+	- syntaxes with indents
+	- difference between json and yaml
+
+
+
+	what is YAML?
+		- yaml ain't markup language
+		- data serialization
+		- very friendly data storage
+		- extension should be given as .yaml or .yml
+		- version 1.2v
+		- case sensitive
+		- indents hava to be properly defined.
+
+	Usage of YAML:
+		- configurations
+		- logging information
+		- transfer data
+		- storing data
+		- Web services
+		- cross platform application
+
+
+	YAML tools:
+
+		-> YAML viewer
+		-> YAML TO JSON
+
+
+	YAML Comments:
+		#
+		#
+		#
+
+	Example of YAML:
+
+
+
+	Employee 
+		empid: 121
+		empname: shiva
+		empage: 17
+		empaddress -> hno, streetname, colony, city, country, pincode(object)
+		empsalary -> 57000.75
+		empmobile -> 68979799,7899878
+		empjoiningdate -> 17/02/2022
+		empactive ->true 
+		empbonus -> null
+
+
+		empid-> 143
+		empname-> kumar
+		empage -> 21
+		empaddress -> hno, streetname, colony, city, country, pincode(object)
+		empsalary -> 75600.90
+		empmobile -> 667676767,456755466
+		empjoiningdate -> 01/01/1995
+		empactive ->true 
+		empbonus -> 5000
+
+
+
+XML :
+
+	what is XML?
+	what is DTD?
+	few examples using dtd
+	what is xsd?
+	few examples using xsd
+	differences between XML vs JSON vs YAML
+
+
+	What is XML?
+		- extensible markup language.
+		- user defined tags 
+		- it is syntax wise very strict when compared HTML
+		- case sensitive
+		- it contains a blueprint which defines xml structure -> DTD and XSD
+	
+	uses of XML:
+		- configuration
+		- data transfer
+		- web application
+		- web services
+		- data storage
+		- structuring data
+
+
+	Employee 
+		empid: 121
+		empname: shiva
+		empage: 17
+		empaddress -> hno, streetname, colony, city, country, pincode(object)
+		empsalary -> 57000.75
+		empmobile -> 68979799,7899878
+		empjoiningdate -> 17/02/2022
+		empactive ->true 
+		empbonus -> null
+
+
+		empid-> 143
+		empname-> kumar
+		empage -> 21
+		empaddress -> hno, streetname, colony, city, country, pincode(object)
+		empsalary -> 75600.90
+		empmobile -> 667676767,456755466
+		empjoiningdate -> 01/01/1995
+		empactive ->true 
+		empbonus -> 5000
+
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<employees>
+		<employee>
+			<empid>121</empid>
+			<empname>shiva</empname>
+			<empage>17</empage>
+			<empaddress>some data</empaddress>
+			<empsalary>57000.75</empsalary>
+			<empmobile value="68979799 7899878"></empmobile>
+			<empjoiningdate>17/02/2022<empjoiningdate>
+
+			<empactive>true</empactive>
+			<empbonus>null</empbonus>
+		</employee>		
+	</employees>
+
+
+DTD:
+	-> document type definition
+
+		extesion is saved as .dtd and it defines structure of xml file
+
+	-> dtd contains elements declaration, attributes declaration, entityreferences declaration
+
+	types of elements:
+	1. text element
+	2. child element
+	3. Any element
+	4. empty element
+	5. mixed element
+
+	Cardinality operations:
+
+	* - 0 to n occurence
+	+ - 1 to n occurence
+	? - 0 to 1 occurence
+
+
+<!ELEMENT employees (employee)>
+<!ELEMENT employee (eid,ename,eage,eaddress,esalary,emobile,ejoiningdate,eactive,ebonus)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT eage (#PCDATA)>
+<!ELEMENT eaddress (#PCDATA)>
+<!ELEMENT esalary (#PCDATA)>
+<!ELEMENT emobile (#PCDATA)>
+<!ELEMENT ejoiningdate (#PCDATA)>
+<!ELEMENT eactive (#PCDATA)>
+<!ELEMENT ebonus (#PCDATA)>
+
+
+	types to apply dtd on xml:
+	1. internal
+	2. external
+
+	
+XSD: 
+	-> xml schema definition
+		extension is saved as .xsd and it defines structure of xml file with more data types.
+
+
+	dtd
+		-> limited number of data types are sufficient 
+		-> cardanility is limited
+			1-n
+			0-n
+			0 | 1
+
+	xsd
+		-> lot data type support
+		-> min cardinality and max occurs 
+			5 - 10
+
+		-> it contains more security and more tags are given to create elements and attributes.
+
+		type of elements:
+		1. simple element
+
+			<empid>45</empid>
+			<empage>17</empage>
+
+			xsd :
+			<element name="empid" type="int"/>
+			<element name="empage" type="int"/>
+			
+		2. complex element
+
+			i. element with child element and with or without attribute
+
+			<schema>
+			<element name ="employee">
+				<complexType>
+					<sequence>
+						<element name="empid" type="int"/>
+						<element name= "empname" type="string"/>
+						<element name= "empsalary" type="decimal"/>
+					</sequence>
+				</complexType>
+			</element>
+			</schema>
+
+
+			-------------------------------------------------------
+
+
+			<employee>
+				<empid>678</empid>
+				<empname>shiva</empname>
+				<empsalary>78900.67</empsalary>
+			</employee>
+			ii. element with text and attributes
+			iii. element with empty content and attributes
+			iv. element with mixed content
+
+
+
+	
+
+	namespace:
+
+	java.util
+	java.sql
+
+	java.util.Date d =new java.util.Date();
+	java.sql.Date d1=new java.sql.Date();
+
+
+	http://www.w3.org/2001/XMLSchema
+
+	schema, complex-element, element.........
+
+	-> XSD -> set structure of xml
+
+		predefined tags: 
+		-> http://www.w3.org/2001/XMLSchema
+		
+		tags-> schema, complex-element,element......
+
+	
+	
+
+
+	
+
+	
+		
+		
+
+
+
+
+
+
+

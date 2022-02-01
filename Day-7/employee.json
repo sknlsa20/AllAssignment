@@ -1,0 +1,47 @@
+{
+	"Employee":
+		[
+			{
+				"empid": 121,
+				"empname": "shiva",
+				"empage": 17,
+				"empsalary": 57000.75,
+				"empmobile":  [68979799,7899878],
+				"empaddress":
+					{
+						"hno":"13-112",
+						"street": "aparna street",
+						"colony": "some colony",
+						"city": "patna",
+						"state": "bihar",
+						"pincode": 500302
+					},
+				"empjoiningdate": "17/02/2022",
+				"empactive": true,
+				"empbonus": null
+			},
+			{
+				"empid": 143,
+				"empname": "kumar",
+				"empage": 21,
+				"empsalary": 75600.90,
+				"empmobile":  [667676767,456755466],
+				"empaddress":
+					{ 
+						"hno":"13-1118",
+						"street": "James street",
+						"colony": "jhonson colony",
+						"city": "bangalore",
+						"state": "Karnataka",
+						"pincode": 500607
+							
+					},
+				"empjoiningdate": "01/01/1995",
+				"empactive": true,
+				"empbonus": 5000
+			}
+
+		]
+
+
+}

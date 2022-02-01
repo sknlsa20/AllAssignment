@@ -1,0 +1,321 @@
+Day - 10:
+
+	Servlet -> serverside programming
+	
+
+	Servlet
+	GenericServlet
+	HttpServlet
+
+
+	javax.servlet -> Servlet, GenericServlet, ServletRequest, ServletResponse,
+
+			
+	javax.servlet.http -> HttpServlet, HttpServletRequest, HttpServletResponse
+
+
+	War file -> web archive files
+	jar file -> java archive files
+	Ear file -> Enterprise archive file
+
+	<welcome-file-list> -> which web page should be home page.
+
+	-> Loads all servlet class
+	-> depending on request that servlet object is instantiated
+	-> initialize by calling init() method
+	-> executing service(request,response) method
+	-> destroies by calling destroy() method.
+
+
+		<load-on-startup>3</load-on-startup>
+
+	sendRedirect() -> forwards response to another servlet or jsp page.
+
+
+
+	ServletConfig  -> every servlet has its own servlet configuration
+	ServletContext -> for every servlet this configuration
+
+
+
+
+	servlet navigation :
+
+	-> web.xml -> welcome file list -> home page -> submit button -> action -> web.xml -> url mapping -> servlet name -> servlet class -> sevlet object is instancetiated -> init()-> service()-> destory();
+
+
+
+	
+	Session Tracking:
+
+	session : 
+
+		it means particular time interval.
+
+	session tracking :
+		it is a way of maintaining state.
+
+
+	1. Cookies
+	2. Hidden Form field
+	3. url rewritting
+
+	4. HttpSession	-> container
+
+
+task:
+
+	create your application with login page, then give logout, once get logged out should not be able to login without username and password.
+
+
+
+
+	URL reritting:
+
+		response.sendRedirect("index.jsp?u="+u)
+
+
+
+
+	JSP -> 
+		Java server pages (these are written on servlets)
+
+	advantages:
+
+	1. faster than servlets
+	2. not required to restart server many times.
+	3. easy to maintain
+	4. not required to map.
+	5. less code than servlets.
+
+
+	Life cycle:
+	
+	-> jsp page is translated 
+	-> jspage is compiled
+	-> loads servlets class
+	-> instantiation
+	-> init() -> jspInit()
+	-> service() -> jspService()
+	-> destroy() -> jspDestroy()
+
+
+	JspPage -> jspInit(),jspDestroy();
+	HttpJspPage -> jspService();
+
+
+	html -> .jsp to have java code in it.
+	
+	-> how many ways we can write java code in jsp:
+
+	1. scriplet <% %>
+	2. expression <%= %>
+	3. declaration <%! %>
+
+	implicit objects:
+	
+	out - JspWriter
+	request -> HttpServletRequest
+	response -> HttpServletResponse
+	config -> ServletConfig
+	application -> ServletContext
+	session -> HttpSession
+	pageContext -> PageContext
+	page -> Object
+	exception -> Throwable
+
+
+	directives:
+
+	which will define jsp pages: <%@ %>
+
+		1. page
+
+			language= java,
+			import = java.util.*
+			contentType=
+			extends
+			info
+			buffer
+			isELIgnored= true
+			isThreadSafe
+			autoFlush
+			session
+			pageEncoding
+			errorPage
+			isErrorPage
+			
+		2. include
+
+			including external file in jsp
+
+		3. taglib
+
+			for including any other libraries required for jsp
+
+			   <%@ taglib uri="http://www.spring.org/spring" prefix="c" %>
+
+
+	Expression Language:
+
+	it is used to simplify accessibility of data stored.
+
+
+	keywords: 
+	lt, le, gt, ge,eq,ne,true,false,and, or, not, instanceof,div,mod,empty,null
+	
+
+	operators:
+	arithematic, +, -, le,ge,eq,gt,ge....
+	and or
+	?:
+
+
+		Implicit Objects EL:
+		1. pageScope
+		2. requestScope
+		3. sessionScope
+		4. applicationScope
+		5. param
+		6. paramValues
+		7. header
+		8. headerValues
+		9. cookie
+		10.initParam
+		11.pageContext
+
+
+	JSTL :
+		jsp standard tag library
+
+	-> it is used to eliminate scriplet from jsp pages.
+
+	categoriezed:
+
+	1. core -> http://java.sun.com/jsp/jstl/core -> c
+
+
+		<c:out>
+		<c:import>
+		<c:set>
+		<c:remove>
+		<c:catch>
+		<c:if>
+		<c:choose>
+		<c:when>
+		<c:otherwise>
+		<c:forEach>
+		<c:forTokens>
+		<c:param>
+		<c:redirect>
+		<c:url>
+
+	2. function -> http://java.sun.com/jsp/jstl/functions -> fn
+
+		fn:contains()
+		fn:containsIgnoreCase()
+		fn:endsWith()
+		fn:escapeXml()
+		fn:indexOf()
+		fn:trim()
+		fn:startsWith()
+		fn:split()
+		fn:toLowerCase()
+		fn:toUpperCase()
+		fn:substring()
+		fn:length()
+		fn:replace()
+		fn:substringAfter()
+		fn:substringBefore()
+
+	3. formatting http://java.sun.com/jsp/jstl/fmt -> fmt
+
+
+		fmt:parseNumber
+		fmt:timeZone
+		fmt:formatNumber
+		fmt:parseDate
+		fmt:bundle
+		fmt:setTimeZone
+		fmt:setBundle
+		fmt:message
+		fmt:formatDate
+
+	4. xml->http://java.sun.com/jsp/jstl/xml -> x
+
+		<x:out>
+		<x:parse>
+		<x:set>
+		<x:choose>
+		<x:when>
+		<x:otherwise>
+		<x:if>
+		<x:transform>
+		<x:param>
+
+	5. sql-> http://java.sun.com/jsp/jstl/sql -> sql
+
+				sql:setDataSource
+				sql:query
+				sql:update
+				sql:param
+				sql:dateParam
+				sql:transaction
+
+
+
+	apache Maven :
+		-> it is a build tool(project management)
+		-> it defines complete architecture of project 
+		-> it automatically downloads and stores depedent jar files into local repository.
+
+	advantages:
+		-> downloads jars for each project
+		-> create right project structure
+		-> builds and deploys -> war, jar, ear -> added to server
+
+
+	building process:
+
+		-> documentation, build - war, jar, ear, reporting, releases, distribution
+
+	pom.xml -> project object model
+
+
+	commands of maven:
+
+	- validate
+	- compile
+	- test
+	- package
+	- integrated test
+	- verify
+	- install
+	- deploy
+
+
+	
+
+	<c:forEach var="user" items="${rs.rows}" >
+	<c:out value="${user.username }"/>
+	<c:out value="${user.password }"/>
+	<br/>
+	</c:forEach>
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+ 
+
+
+	
+	
